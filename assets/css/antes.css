@@ -93,16 +93,15 @@ a{color:var(--granate)}
 /* ---------- Héroe ---------- */
 .heroe{
   position:relative;min-height:520px;display:flex;align-items:flex-end;
-  background:
-    linear-gradient(rgba(20,20,25,.45),rgba(20,20,25,.35)),
-    linear-gradient(165deg,#7e8a94 0%,#5a646d 40%,#3c434a 100%);
+  /* Clásico de plantilla barata: foto clara y movida con el texto blanco encima, apenas legible */
+  background:url('../img/hero-oficinas.svg') center 25%/cover no-repeat;
 }
 .heroe__contenido{padding-bottom:110px}
 .heroe h1{
   color:#fff;font-size:clamp(40px,7vw,72px);font-weight:800;
-  letter-spacing:1px;text-shadow:0 2px 12px rgba(0,0,0,.5);
+  letter-spacing:1px;text-shadow:0 1px 3px rgba(255,255,255,.4);
 }
-.heroe__sub{color:#fff;font-weight:300;font-size:clamp(18px,2.6vw,26px);margin-top:8px;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.heroe__sub{color:#fff;font-weight:300;font-size:clamp(18px,2.6vw,26px);margin-top:8px;text-shadow:0 1px 3px rgba(255,255,255,.4)}
 .heroe__cta{position:absolute;bottom:38px;left:0;right:0;text-align:center}
 
 /* ---------- Quiénes somos ---------- */
