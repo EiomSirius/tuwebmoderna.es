@@ -1,0 +1,77 @@
+/* antes.css — estética deliberadamente 2010 (plantilla WordPress de la época).
+   NO reutilizar en nada real. */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333;
+  background: #e8e4d8 url("data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==");
+  margin: 0;
+}
+a { color: #0000EE; text-decoration: underline; }
+a:visited { color: #551A8B; }
+
+.cabecera-vieja {
+  background: linear-gradient(#2a5d8a, #1a3d5c);
+  color: #fff;
+  padding: 10px;
+  border-bottom: 4px solid #c9a227;
+}
+.cabecera-vieja h1 { font-family: "Times New Roman", Times, serif; font-size: 26px; margin: 0; }
+.cabecera-vieja h1 a { color: #fff; text-decoration: none; }
+.cabecera-vieja .lema { font-size: 12px; font-style: italic; color: #ffe9a8; }
+
+.menu-viejo {
+  background: #1a3d5c;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+.menu-viejo a { color: #fff; margin-right: 14px; }
+
+.contenedor-viejo { width: 96%; max-width: 980px; margin: 10px auto; background: #fff; border: 1px solid #999; }
+
+.foto-cutre {
+  width: 100%; height: 220px;
+  background: #b9c4c9;
+  background-image:
+    linear-gradient(45deg, rgba(255,255,255,.25) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.25) 75%),
+    linear-gradient(45deg, rgba(255,255,255,.25) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.25) 75%);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: #5a6a72; font-size: 13px; font-style: italic;
+  border-bottom: 3px double #999;
+}
+
+.bienvenida {
+  padding: 14px;
+  border-bottom: 1px dashed #999;
+}
+.bienvenida h2 { font-family: "Times New Roman", Times, serif; color: #1a3d5c; font-size: 20px; margin: 0 0 8px; }
+
+.columnas { overflow: hidden; }
+.col-principal { float: left; width: 68%; padding: 14px; }
+.col-lateral { float: right; width: 28%; padding: 14px 10px 14px 0; font-size: 12px; }
+
+.caja-lateral {
+  border: 1px solid #999; background: #f5f2e8;
+  padding: 8px; margin-bottom: 12px;
+}
+.caja-lateral h3 { font-size: 13px; background: #1a3d5c; color: #fff; margin: -8px -8px 8px; padding: 5px 8px; }
+
+.servicios-viejos { list-style: square; padding-left: 22px; }
+.servicios-viejos li { margin-bottom: 8px; }
+
+.pie-viejo {
+  clear: both;
+  background: #1a3d5c; color: #cfe0ee;
+  font-size: 11px; padding: 12px;
+  text-align: center;
+}
+.pie-viejo a { color: #ffe9a8; }
+.contador {
+  display: inline-block; background: #000; color: #0f0;
+  font-family: "Courier New", monospace; font-size: 12px;
+  padding: 2px 8px; letter-spacing: 3px; margin-top: 6px;
+}
+.aviso-demo { font-size: 11px; color: #777; margin-top: 8px; }

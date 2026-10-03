@@ -1,0 +1,54 @@
+/* despues.css — demo moderna "Asesoría Entreolivos".
+   Reutiliza tokens, fuentes y botones de style.css. */
+
+.demo-cabecera {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid var(--hielo);
+}
+.demo-cabecera .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 68px;
+}
+.demo-logo {
+  font-family: "Montserrat", sans-serif; font-weight: 800;
+  color: var(--tinta); text-decoration: none; font-size: 18px;
+}
+.demo-nav { display: flex; gap: 20px; }
+.demo-nav a { color: var(--tinta); text-decoration: none; font-weight: 500; font-size: 15px; }
+.demo-nav a:hover { color: var(--petroleo); }
+
+.demo-hero { padding: 72px 0; }
+.demo-hero h1 { font-size: 40px; }
+.demo-hero .lead { max-width: 56ch; }
+.demo-hero__cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.demo-hero .btn { min-height: 52px; padding: 14px 24px; font-size: 16px; }
+.demo-hero .btn svg { width: 20px; height: 20px; }
+
+.demo-servicios { padding: 72px 0; background: var(--niebla); }
+.demo-grid {
+  display: grid; gap: 16px; margin-top: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.demo-card {
+  background: var(--blanco); border: 1px solid var(--hielo);
+  border-radius: var(--radio-card); padding: 28px;
+}
+.demo-card h3 { font-size: 18px; margin-bottom: 8px; }
+.demo-card p { margin: 0; color: var(--pizarra); font-size: 16px; }
+
+.demo-contacto { padding: 72px 0; }
+.demo-contacto__grid { display: grid; gap: 32px; }
+.demo-datos { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 12px; font-size: 17px; }
+.demo-datos strong { font-weight: 600; }
+
+.demo-pie {
+  border-top: 1px solid var(--hielo); padding: 32px 0;
+  color: var(--pizarra); font-size: 14px;
+}
+.demo-pie .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+@media (max-width: 700px) {
+  .demo-nav { display: none; }
+  .demo-hero h1 { font-size: 30px; }
+}
