@@ -96,7 +96,7 @@ a{color:var(--granate)}
 .heroe{
   position:relative;min-height:520px;display:flex;align-items:flex-end;
   /* Clásico de plantilla barata: foto de stock clara y movida con el texto blanco encima, apenas legible.
-     Foto: Pexels 7845099 (uso comercial gratuito). */
+     Foto: Pexels 6592745 (uso comercial gratuito). */
   background:url('../img/antes/hero-gestoria.webp') center 30%/cover no-repeat #cfd6da;
 }
 .heroe__contenido{padding-bottom:110px}
