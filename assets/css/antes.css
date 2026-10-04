@@ -166,12 +166,12 @@ a{color:var(--granate)}
 
 /* ---------- Equipo ---------- */
 .equipo{padding:84px 0;background:#fafafa}
-.equipo__grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.equipo__grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .equipo p{margin-bottom:14px}
 
 /* ---------- Noticias ---------- */
 .noticias{padding:84px 0}
-.noticias__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.noticias__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
 .noticias p{margin-bottom:14px}
 .noticias__cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .tarjeta-blog{position:relative;overflow:hidden;border-radius:3px;min-height:190px;display:flex}
@@ -217,7 +217,7 @@ a{color:var(--granate)}
 
 /* ---------- CTA final ---------- */
 .cta-final{
-  padding:110px 0;text-align:center;color:#fff;
+  padding:88px 0;text-align:center;color:#fff;
   background:
     linear-gradient(rgba(25,15,12,.72),rgba(25,15,12,.72)),
     linear-gradient(150deg,#4a3f36 0%,#2c2620 60%,#1a1512 100%);
