@@ -68,6 +68,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 74px; /* Compensa la cabecera fija */
   font-family: var(--f-cuerpo);
   font-size: 18px;
   line-height: 1.55;
@@ -86,7 +87,8 @@ h1, h2, h3 {
   font-optical-sizing: auto;
 }
 h1 { font-size: clamp(2.125rem, 1.35rem + 3.4vw, 3.25rem); font-weight: 800; }
-h2 { font-size: clamp(1.75rem, 1.35rem + 1.9vw, 2.5rem); font-weight: 700; }
+h2 { font-size: clamp(1.75rem, 1.35rem + 1.9vw, 2.5rem); font-weight: 700; margin: 0 0 18px; }
+.eyebrow + h2 { margin-top: 0; }
 h3 { font-size: 1.25rem; font-weight: 700; }
 p { margin: 0 0 16px; max-width: 68ch; }
 a { color: var(--petroleo); }
@@ -161,12 +163,15 @@ img { max-width: 100%; height: auto; }
 
 /* ---------- Cabecera ---------- */
 .cabecera {
-  position: sticky; top: 0; z-index: 50;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   background: rgba(254, 253, 251, .88);
   -webkit-backdrop-filter: blur(14px) saturate(1.2);
   backdrop-filter: blur(14px) saturate(1.2);
   border-bottom: 1px solid var(--borde);
+  transition: transform .32s ease;
 }
+/* Se oculta al bajar y reaparece al subir (lo controla el JS) */
+.cabecera--oculta { transform: translateY(-100%); }
 .cabecera__inner {
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px; min-height: 74px;
@@ -252,11 +257,9 @@ img { max-width: 100%; height: auto; }
   border-radius: 46% 54% 52% 48% / 48% 46% 54% 52%;
 }
 .hero__foto {
-  width: 200px; height: 200px; object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid var(--borde);
-  box-shadow: 0 0 0 8px rgba(14, 94, 122, .07), 0 24px 48px rgba(28, 43, 51, .14);
-  background: #f7e4ca;
+  width: 220px; height: 220px; object-fit: cover;
+  /* Sin máscara circular: el retrato recortado flota sobre el halo */
+  filter: drop-shadow(0 22px 30px rgba(28, 43, 51, .22));
   display: block;
 }
 .hero__sub { font-size: 18.5px; color: var(--pizarra); max-width: 44ch; }
